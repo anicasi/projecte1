@@ -4,4 +4,4 @@ L'objectiu és poder fer que un Led s'engegui quan escrivim "ON" i s'apagui amb 
 
 Membres
 
-Jonhattan  Alex
+Jonathan Cruz - Alex Nicasi
