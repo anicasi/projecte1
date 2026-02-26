@@ -26,4 +26,7 @@ void loop() {
 }
 
 D'aquesta manera mostrara en el text la linia escrita:
-![Comprovació del monitor sèrie](img/Issue1.png)
+
+
+
+<img width="313" height="165" alt="image" src="https://github.com/user-attachments/assets/cdca5fc4-6d3b-40f9-bfa3-5f35f3e5334d" />
