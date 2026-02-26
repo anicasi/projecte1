@@ -16,10 +16,12 @@ void setup() {
 Per confirmar que el monitor sèrie reconeix el text, s'afegeix les següents linies dins void loop():
 
 void loop() {
-  if (Serial.available()){
+ if (Serial.available()){
+ 
     String linia = Serial.readStringUntil('\n');
     linia.trim();
   if (linia.length()>0){ 
+  
     Serial.println(linia);
   }
 }
