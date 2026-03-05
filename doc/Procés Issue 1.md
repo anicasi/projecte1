@@ -8,27 +8,17 @@ void loop() {
 }
 
 I també el codi que inicialitza el Serial a 115200:
-void setup() {
+void setup (){
   Serial.begin(115200);
-}
-
-
-Per confirmar que el monitor sèrie reconeix el text, s'afegeix les següents linies dins void loop():
-
-void loop() {
- if (Serial.available()){
- 
-    String linia = Serial.readStringUntil('\n');
-    linia.trim();
-  if (linia.length()>0){ 
-  
-    Serial.println(linia);
+  delay(200);
+  Serial.println("Tot esta llest");
   }
+void loop(){
+ 
 }
-}
+
 
 D'aquesta manera mostrara en el text la linia escrita:
 
 
-
-<img width="313" height="165" alt="image" src="https://github.com/user-attachments/assets/cdca5fc4-6d3b-40f9-bfa3-5f35f3e5334d" />
+<img width="601" height="450" alt="image" src="https://github.com/user-attachments/assets/296735b5-5690-405b-835d-44f7b3970f5b" />
