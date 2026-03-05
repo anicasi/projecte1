@@ -2,29 +2,19 @@ OBJECTIU: Mostrar dades rebudes amb el prefix "Rebut: ..." per comprovar el func
 
 Per completar aquest Issue, partirem del codi utilitzat als Issues 1 i 2 ja que mostra el text escrit en el monitor sèrie cosa que completa la segona part de la tasca:
 
-void loop() {
- if (Serial.available()){
- 
+void setup (){
+  Serial.begin(115200);
+  delay(200);
+  Serial.println("Tot esta llest");
+  }
+void loop(){
+    if (Serial.available()){
     String linia = Serial.readStringUntil('\n');
     linia.trim();
-  if (linia.length()>0){ 
-  
+    if (linia.length()>0){ 
+    Serial.print("Rebut: ");
     Serial.println(linia);
-  }
-  }
+    }
+    }
 }
-
-El que resta, és que indiqui el text de "Rebut:" i per completar aixó, hem de repetir una linia més dins de **void loop(){**, aquesta és Serial.printIn(); sobre el pintIn(linia)
-
-void loop() {
- if (Serial.available()){
- 
-    String linia = Serial.readStringUntil('\n');
-    linia.trim();
-  if (linia.length()>0){ 
-  
-    Serial.printIn(Rebut: );
-    Serial.println(linia);
-  }
-  }
-}
+<img width="393" height="389" alt="image" src="https://github.com/user-attachments/assets/c7f254ad-0612-4602-9604-36a6962f930c" />
